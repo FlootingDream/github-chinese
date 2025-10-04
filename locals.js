@@ -159,7 +159,7 @@ I18N.conf = {
             'div.markdown-body', // 发布版正文
         ],
         'repository/wiki': [
-            '#wiki-body', // wiki 正文
+            '#wiki-body', // 文档正文
             'ul.list-style-none.mx-4.px-1', // 右侧目录
         ],
         'orgs': [
@@ -3411,7 +3411,7 @@ I18N["zh-CN"]["settings/admin"] = { // 设置 - 账户
                 "Are you sure you want to do this?": "您确定要这么做吗？",
                 "This is extremely important.": "这是极其重要的。",
                 "We will": "我们将",
-                ", along with all of your forks, wikis, issues, pull requests, and GitHub Pages sites.": "以及您所有的复刻、Wiki、议题、拉取请求和 GitHub Pages 站点。",
+                ", along with all of your forks, wikis, issues, pull requests, and GitHub Pages sites.": "以及您所有的复刻、文档、议题、拉取请求和 GitHub Pages 站点。",
                 "You will no longer be billed, and after 90 days your username will be available to anyone on GitHub.": "您将不再被收取费用,并且 90 天后您的用户名将被 GitHub 上的任何人使用。",
                 "For more help, read our article \"": "如需更多帮助,请阅读我们的文章 “",
                 "Deleting your user account": "删除您的账户",
@@ -5074,7 +5074,7 @@ I18N["zh-CN"]["settings/blocked_users"] = { // 设置 - 黑名单
             "Blocking a user prevents the following on all your repositories:": "拉黑用户可以防止所有仓库中的以下操作：",
             "opening or commenting on issues or pull requests": "打开或评论议题或拉取请求",
             "starring, forking, or watching": "标星、复刻、关注",
-            "adding or editing wiki pages": "添加或编辑 Wiki 页面",
+            "adding or editing wiki pages": "添加或编辑文档页面",
             "Additionally, blocked users are not able to:": "此外,被拉黑用户无法：",
             "invite you as a collaborator to their repositories": "邀请您作为其仓库的协作者",
             "follow your account’s public activity": "关注您的账户的公共活动",
@@ -13123,13 +13123,13 @@ I18N["zh-CN"]["repository/models"] = { // 仓库 - 模型
     ],
 }
 
-I18N["zh-CN"]["repository/wiki"] = { // 仓库 - wiki 页面
+I18N["zh-CN"]["repository/wiki"] = { // 仓库 - 文档页面
     "static": { // 静态翻译
         ...I18N["zh-CN"]["repository-public"]["static"],
 
         // wiki 页面  /<user-name>/<repo-name>/wiki
-            // [/Welcome to the ([^ ]+) wiki!/, "欢迎访问 $1 的 Wiki"], // wiki页面
-            "You do not have permission to update this wiki.": "您无权更新此 wiki。",
+            // [/Welcome to the ([^ ]+) wiki!/, "欢迎访问 $1 的文档"], // wiki页面
+            "You do not have permission to update this wiki.": "您无权更新此文档。",
             "Wikis provide a place in your repository to lay out the roadmap of your project, show the current status, and document software better, together.": "Wiki 为您的仓库提供了一个更好的文档资料。",
             "Create the first page": "创建第一个页面",
 
@@ -13143,11 +13143,11 @@ I18N["zh-CN"]["repository/wiki"] = { // 仓库 - wiki 页面
                 "Toggle table of contents": "折叠/展开目录",
                 "Find a page…": "搜索页面…",
             "Add a custom sidebar": "添加自定义侧边栏",
-            "Clone this wiki locally": "在本地克隆这个 Wiki",
+            "Clone this wiki locally": "在本地克隆这个文档",
 
             "Last updated": "最后更新",
 
-        // 新建 wiki 页面 /<user-name>/<repo-name>/wiki/_new
+        // 新建文档页面 /<user-name>/<repo-name>/wiki/_new
             "Create new page": "创建新页面",
             "Title": "标题",
             "Write": "编辑",
@@ -13290,7 +13290,7 @@ I18N["zh-CN"]["repository/wiki"] = { // 仓库 - wiki 页面
     },
     "regexp": [ // 正则翻译
         ...I18N["zh-CN"]["repository-public"]["regexp"],
-        [/Welcome to the ([^ ]+) wiki!/, "欢迎访问 $1 的 Wiki"], // wiki页面
+        [/Welcome to the ([^ ]+) wiki!/, "欢迎访问 $1 的文档"], // wiki页面
         [/edited this page/, "编辑此页"], // wiki
         [/(\d+) revisions?/, "$1 次修订"], // wiki
         [/Editing/, "编辑"], //编辑 wiki
@@ -15677,7 +15677,7 @@ I18N["zh-CN"]["repository/settings"] = { // 仓库设置 - 通常 /<user-name>/<
                 "Upgrade or make this repository public to enable Wikis": "升级或公开此仓库,以启用 Wiki",
                 "GitHub Wikis is a simple way to let others contribute content. Any GitHub user can create and edit pages to use for documentation, examples, support, or anything you wish.": "GitHub Wikis 是一种让他人贡献内容的简单方法。任何 GitHub 用户都可以创建和编辑页面,用于文档、示例、支持或任何您想要的东西。",
                 // "Upgrade": "升级",
-                    "Learn more about wikis": "了解更多关于 Wiki 的信息",
+                    "Learn more about wikis": "了解更多关于文档的信息",
 
             // 议题
             "Issues integrate lightweight task tracking into your repository. Keep projects on track with issue labels and milestones, and reference them in commit messages.": "议题将轻量级任务跟踪集成到您的仓库中。使用议题标签和里程碑保持项目正常运行,并在提交消息中引用它们。",
@@ -15906,9 +15906,9 @@ I18N["zh-CN"]["repository/settings"] = { // 仓库设置 - 通常 /<user-name>/<
                 "I want to delete this repository": "我想删除这个仓库",
 
                 "This will permanently delete the": "这将永久删除",
-                "repository, wiki, issues, comments, packages, secrets, workflow runs, and remove all collaborator associations will be permanently deleted.": "仓库、Wiki、议题、评论、软件包、机密、工作流程,并删除所有协作者关联。",
-                "repository, wiki, issues, comments, packages, secrets, workflow runs, and remove all collaborator associations.": "仓库、Wiki、议题、评论、软件包、机密、工作流程,并删除所有协作者关联。",
-                "repository, wiki, issues, comments, packages, secrets, workflow runs, and remove all team associations.": "仓库、Wiki、议题、评论、软件包、机密、工作流程,并删除所有团队关联。", // 组织仓库
+                "repository, wiki, issues, comments, packages, secrets, workflow runs, and remove all collaborator associations will be permanently deleted.": "仓库、文档、议题、评论、软件包、机密、工作流程,并删除所有协作者关联。",
+                "repository, wiki, issues, comments, packages, secrets, workflow runs, and remove all collaborator associations.": "仓库、文档、议题、评论、软件包、机密、工作流程,并删除所有协作者关联。",
+                "repository, wiki, issues, comments, packages, secrets, workflow runs, and remove all team associations.": "仓库、文档、议题、评论、软件包、机密、工作流程,并删除所有团队关联。", // 组织仓库
                 "This will not change your billing plan. If you want to downgrade, you can do so in your Billing Settings.": "这并不会更改您的结算方案。 如果您想降级,可以在结算设置中进行降级。",
 
     },
@@ -18192,7 +18192,7 @@ I18N["zh-CN"]["repository/transfer"] = { // 转让仓库
                 "and accepts the transfer, they will lose access to private repository features:": "并接受转移,他们将失去对私有仓库功能的访问：",
                 "Code owners": "代码所有者"，
                 "Any existing": "任何已存在的",
-                "wikis": "WiKi",
+                "wikis": "文档",
                 "Pulse, Contributors, Community, Traffic, Commits, Code Frequency, Network,": "统计,仓库贡献者,社区,流量,提交,代码频率,网络,",
                 "Forks": "复刻",
                 "on the": "在",
@@ -19777,7 +19777,7 @@ I18N["zh-CN"]["search"] = { // 搜索页面
             "commits": "提交",
             "package": "软件包",
             "packages": "软件包",
-            "wikis": "Wiki",
+            "wikis": "文档",
             "Try one of the tips below to find more code": "请尝试使用以下提示查找更多代码",
             "Try one of the tips below to find more repositories": "请尝试使用以下提示查找更多仓库",
             "You could try one of the tips below.": "请尝试使用以下提示",
@@ -22641,7 +22641,7 @@ I18N["zh-CN"]["orgs/settings/blocked_users"] = { // 组织设置 - 黑名单
             "Blocking a user prevents the following on all your repositories:": "拉黑用户可以防止所有仓库中的以下操作：",
             "opening or commenting on issues or pull requests": "打开或评论议题或拉取请求",
             "starring, forking, or watching": "标星、复刻、关注",
-            "adding or editing wiki pages": "添加或编辑 Wiki 页面",
+            "adding or editing wiki pages": "添加或编辑文档页面",
 
             "Search by username, full name or email address": "搜索用户名、全名、或电子邮箱",
                 "Learn more about blocking a user": "了解更多关于拉黑用户的信息",
